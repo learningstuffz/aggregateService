@@ -28,11 +28,7 @@ namespace MVCAggregate.Controllers
         public string GetData()
         {
             
-            //if (luc.ClearLuceneIndex())
-            //{
-            //    luc.AddUpdateLuceneIndex(li);
-            //    luc.Optimize();
-            //}
+            
             string[] files = Directory.GetFiles(Server.MapPath("~/Upload"));//Gets the recent file
             string file = files[0];
             BusinessLogic bLogic = new BusinessLogic();
