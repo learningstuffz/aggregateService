@@ -16,14 +16,9 @@ namespace MVCAggregate.Controllers
     {
         // GET api/values
         [OutputCache(Location = OutputCacheLocation.None)]
-        public DataTable Get()
+        public string Get()
         {
-            string file = @"C:\Debuzz\Indix Requirement\SampleData.csv";
-            BusinessLogic bLogic = new BusinessLogic();
-            //List<DataRow> li=bLogic.FetchData(file);
-            DataTable dt = bLogic.FetchData(file);
-            dt.TableName = "SampleData";
-            return dt;
+            return "";
         }
 
         // GET api/values/5

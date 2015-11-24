@@ -1,4 +1,4 @@
-﻿using MVCAggregate.Models;
+﻿using MVCAggregate.Models; 
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,9 +12,10 @@ namespace MVCAggregate.Controllers
 {
     public class SampleController : Controller
     {
+        
         //
         // GET: /Sample/
-
+        
         public ActionResult Index()
         {
             return View();
@@ -66,6 +67,9 @@ namespace MVCAggregate.Controllers
 
         }
         //
+
+
+       
         // GET: /Sample/Details/5
 
         public ActionResult Details(int id)

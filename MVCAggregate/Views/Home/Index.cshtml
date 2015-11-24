@@ -3,6 +3,24 @@
         
     </section>
     <section class="content-wrapper main-content clear-fix">
-        The service is running now...
-    </section>
+        @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="file" name="file" class="btn btn-default" />
+                </div>
+                <div class="col-sm-4">
+                    <input type="submit" name="Submit" id="Submit" value="Upload" class="btn btn-default" />
+                </div>
+            </div>
+    <div class="row">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <span class="message-success">@ViewBag.Message</span>
+        </div>
+    </div>
+        }
+        
+</section>
 </div>
