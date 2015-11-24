@@ -58,7 +58,8 @@ namespace MVCAggregate.Controllers
             //    luc.Optimize();
             //}
 
-            string file = @"C:\Debuzz\Indix Requirement\SampleData.csv";
+            string[] files = Directory.GetFiles(Server.MapPath("~/Upload"));//Gets the recent file
+            string file = files[0];
             BusinessLogic bLogic = new BusinessLogic();
             //List<DataRow> li=bLogic.FetchData(file);
             DataTable dt = bLogic.FetchCSVData(file);
